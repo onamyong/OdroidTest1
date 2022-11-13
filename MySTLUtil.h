@@ -112,29 +112,4 @@ public:
 		}
 		return "";
 	}
-
-	//
-	// Distributors
-	//
-	std::vector<double> createUniformReal(double minval, double maxval, size_t num) {
-		std::random_device rnd;
-		std::mt19937 mt(rnd());
-		std::uniform_real_distribution<double> dist(minval, maxval);
-
-		std::vector<double> dataset(num);
-		for (size_t i = 0; i < num; i++) dataset[i] = dist(mt);
-
-		return dataset;
-	}
-
-	std::vector<double> createNormalDist(double mean, double sdev, size_t num) {
-		std::random_device rnd;
-		std::mt19937 mt(rnd());
-		std::normal_distribution<double> dist(mean, sdev);
-
-		std::vector<double> dataset(num);
-		for (size_t i = 0; i < num; i++) dataset[i] = dist(mt);
-
-		return dataset;
-	}
 };
