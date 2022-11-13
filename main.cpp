@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include <string>
 #include <vector>
+#include <unistd.h>
 //#include "MySTLUtil.h"
 #include "wiringPi.h"
 
@@ -17,7 +18,8 @@ int main() {
     int i = 0;
     while (true) {
         cout << i++ << endl;
-            delay(1000);
+        delay(1000);
+        //sleep(1);
     }
 
     getchar();

@@ -99,7 +99,8 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <ClCompile>
       <CppLanguageStandard>c++14</CppLanguageStandard>
-      <AdditionalOptions>-I /usr/include/wiringpi2 -l wiringPi</AdditionalOptions>
+      <AdditionalOptions>
+      </AdditionalOptions>
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
@@ -107,13 +108,16 @@
     </Link>
     <Link>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalOptions>-L/usr/lib/aarch64-linux-gnu/lib -lwiringPi</AdditionalOptions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <LibraryDependencies>wiringPi</LibraryDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <ClCompile>
       <CppLanguageStandard>c++14</CppLanguageStandard>
-      <AdditionalOptions>-I /usr/include/wiringpi2 -l wiringPi</AdditionalOptions>
+      <AdditionalOptions>
+      </AdditionalOptions>
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
@@ -121,13 +125,16 @@
     </Link>
     <Link>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalOptions>-L/usr/lib/aarch64-linux-gnu/lib -lwiringPi</AdditionalOptions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <LibraryDependencies>wiringPi</LibraryDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <CppLanguageStandard>c++14</CppLanguageStandard>
-      <AdditionalOptions>-I /usr/include/wiringpi2 -l wiringPi</AdditionalOptions>
+      <AdditionalOptions>
+      </AdditionalOptions>
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
@@ -135,13 +142,16 @@
     </Link>
     <Link>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalOptions>-L/usr/lib/aarch64-linux-gnu/lib -lwiringPi</AdditionalOptions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <LibraryDependencies>wiringPi</LibraryDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <ClCompile>
       <CppLanguageStandard>c++14</CppLanguageStandard>
-      <AdditionalOptions>-I /usr/include/wiringpi2 -l wiringPi</AdditionalOptions>
+      <AdditionalOptions>
+      </AdditionalOptions>
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
@@ -149,7 +159,9 @@
     </Link>
     <Link>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalOptions>-L/usr/lib/aarch64-linux-gnu/lib -lwiringPi</AdditionalOptions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <LibraryDependencies>wiringPi</LibraryDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
