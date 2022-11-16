@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include <string>
 #include <vector>
+#include <memory>
 #include <unistd.h>
 #include "MySTLUtil.h"
 #include "wiringPi.h"
